@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shalini Madheswaran | Python Backend & Applied AI Engineer</title>
+  <meta name="description"
+    content="Portfolio of Shalini Madheswaran - Python Backend Developer specializing in FastAPI, Django, PostgreSQL, SQLAlchemy, and Applied AI solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-code">&lt;</span>Shalini<span class="logo-code">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#architecture" class="nav-link">Architecture</a>
+        <a href="#experience" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span> Available for Backend & Full Stack Roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Shalini Madheswaran</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Python Backend Developer <span class="divider">|</span> Applied AI Engineer
+          </h2>
+          <p class="hero-description">
+            Building reliable, scalable RESTful APIs, optimized database architectures, and production-ready Applied AI
+            integrations. Skilled in <strong>Python, FastAPI, Django, PostgreSQL, and SQLAlchemy</strong> with
+            experience cutting payment reconciliation errors by 80% and automating batch processing of 5,000+ daily
+            records.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a href="https://github.com/shalinim157" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+            <a href="https://linkedin.com/in/shalini-m-15796ms" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="Shalini_M__Python_Resume.pdf" download="Shalini_M__Python_Resume.pdf" class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <span class="stat-number">1,200+</span>
+              <span class="stat-label">Hours of Backend Training</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">-60%</span>
+              <span class="stat-label">Manual Data Entry</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">-80%</span>
+              <span class="stat-label">Reconciliation Errors</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">developer_profile.py</span>
+              <div class="terminal-lang">Python 3.12</div>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="c-keyword">from</span> pydantic <span class="c-keyword">import</span> BaseModel
+<span class="c-keyword">from</span> typing <span class="c-keyword">import</span> List
+
+<span class="c-keyword">class</span> <span class="c-class">BackendEngineer</span>(BaseModel):
+    name: str = <span class="c-string">"Shalini Madheswaran"</span>
+    role: str = <span class="c-string">"Python Backend Developer"</span>
+    stack: List[str] = [
+        <span class="c-string">"FastAPI"</span>, <span class="c-string">"Django"</span>, 
+        <span class="c-string">"PostgreSQL"</span>, <span class="c-string">"SQLAlchemy"</span>,
+        <span class="c-string">"Pydantic"</span>, <span class="c-string">"OpenAI API"</span>
+    ]
+    core_strengths: List[str] = [
+        <span class="c-string">"Async REST APIs with FastAPI"</span>,
+        <span class="c-string">"PostgreSQL Query Optimization"</span>,
+        <span class="c-string">"OpenAI-powered API Endpoints"</span>
+    ]
+    status: str = <span class="c-string">"Ready to deliver high impact"</span>
+
+<span class="c-comment"># Validating candidate payload...</span>
+shalini = BackendEngineer()
+<span class="c-func">print</span>(f<span class="c-string">"✓ Ready for interview: {shalini-Python Backend developer}"</span>)</code></pre>
+            </div>
+            <div class="terminal-footer">
+              <span class="terminal-status"><i class="fa-solid fa-circle-check"></i> FastAPI Schemas Validated 200
+                OK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Summary</span>
+          <h2 class="section-title">Engineering With Purpose & Precision</h2>
+          <p class="section-subtitle">A balanced backend developer blending core database foundations with modern
+            generative AI capabilities.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card highlight-card">
+            <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Backend Architecture & APIs</h3>
+            <p>
+              Specialized in designing robust RESTful services with <strong>FastAPI</strong> and
+              <strong>Django</strong>. I emphasize type safety through <strong>Pydantic</strong> models, cutting
+              validation errors by 40% and keeping data contracts predictable for API consumers.
+            </p>
+          </div>
+
+          <div class="about-card highlight-card">
+            <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Relational Databases & Performance</h3>
+            <p>
+              Experienced with <strong>PostgreSQL</strong> and <strong>SQLAlchemy ORM</strong>, using indexed queries,
+              aggregate reporting and atomic transactions. Built scheduled batch pipelines that handled 5,000+ records
+              daily.
+            </p>
+          </div>
+
+          <div class="about-card highlight-card">
+            <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Applied AI & Integration</h3>
+            <p>
+              Adding LLM features to backend services. In StudyTrack I built endpoints that call the OpenAI API through
+              prompt templates with fallback retries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Skillset</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-subtitle">Technologies and tools I work with to build robust software systems.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Backend & Frameworks -->
+          <div class="skill-category">
+            <div class="cat-header">
+              <i class="fa-solid fa-server"></i>
+              <h3>Backend & Frameworks</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag primary"><i class="fa-brands fa-python"></i> Python 3.x</span>
+              <span class="skill-tag primary"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+              <span class="skill-tag primary"><i class="fa-solid fa-cubes"></i> Django</span>
+              <span class="skill-tag"><i class="fa-solid fa-book"></i> Django REST Framework</span>
+              <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Pydantic</span>
+              <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> RESTful APIs</span>
+              <span class="skill-tag"><i class="fa-solid fa-file-code"></i> Swagger / OpenAPI</span>
+
+            </div>
+          </div>
+
+          <!-- Databases & ORMs -->
+          <div class="skill-category">
+            <div class="cat-header">
+              <i class="fa-solid fa-database"></i>
+              <h3>Databases & Storage</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag primary"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="skill-tag primary"><i class="fa-solid fa-link"></i> SQLAlchemy ORM</span>
+              <span class="skill-tag"><i class="fa-solid fa-table-list"></i> Django ORM</span>
+            </div>
+          </div>
+
+          <!-- Applied AI & Modern Tools -->
+          <div class="skill-category">
+            <div class="cat-header">
+              <i class="fa-solid fa-microchip"></i>
+              <h3>Applied AI</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag primary"><i class="fa-solid fa-robot"></i> OpenAI API</span>
+              <span class="skill-tag"><i class="fa-solid fa-brain"></i> Prompt Templates</span>
+              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="skill-tag"><i class="fa-solid fa-paper-plane"></i> Postman Testing</span>
+              <span class="skill-tag"><i class="fa-solid fa-gears"></i> GitHub Actions CI/CD</span>
+              <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="flex-between">
+            <div>
+              <span class="section-tag">Featured Work</span>
+              <h2 class="section-title">Production & Capstone Projects</h2>
+              <p class="section-subtitle">Real-world systems engineered with measurable performance impacts.</p>
+            </div>
+            <a href="https://github.com/shalinim157" target="_blank" class="btn btn-sm btn-secondary hide-mobile">
+              View All Repositories <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: StudyTrack -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type"><i class="fa-solid fa-star"></i> Capstone Project</span>
+                <span class="project-date">02/2026 – 08/2026</span>
+              </div>
+              <h3 class="project-title">Student Management Platform with Applied AI (StudyTrack)</h3>
+              <p class="project-desc">
+                A student roster backend built with <strong>FastAPI</strong> and <strong>SQLAlchemy</strong> that
+                supports 1,000+ profiles. It adds AI-generated summaries through the <strong>OpenAI API</strong> and
+                deploys to Render with GitHub Actions CI/CD.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>15+ REST Endpoints:</strong> Built with OpenAI prompt templates, fallback retries and
+                    interactive Swagger docs.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>Strict Validation:</strong> Pydantic models and clear HTTP errors for invalid inputs and
+                    missing records, cutting validation errors by <strong>40%</strong>.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>Clean Architecture:</strong> Dependency Injection and Repository patterns with async
+                    I/O, plus Insertion Sort and Binary Search in the roster APIs and indexed SQLAlchemy queries for
+                    analytics.</span>
+                </div>
+              </div>
+
+              <div class="tech-stack-row">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">OpenAI API</span>
+                <span class="tech-pill">SQLAlchemy</span>
+                <span class="tech-pill">Pydantic</span>
+                <span class="tech-pill">Render</span>
+                <span class="tech-pill">GitHub Actions</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/shalinim157/studytrack" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary">
+                  <i class="fa-brands fa-github"></i> View GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive API Sandbox for Project 1 -->
+            <div class="project-preview-panel" id="studytrack-demo">
+              <div class="panel-header">
+                <span class="panel-badge get">POST</span>
+                <span class="panel-endpoint">/api/v1/students/{id}/ai-summary</span>
+                <button class="run-api-btn" onclick="simulateApiCall('studytrack')">
+                  <i class="fa-solid fa-paper-plane"></i> Run Request
+                </button>
+              </div>
+              <div class="panel-body">
+                <div class="code-split">
+                  <div class="code-col">
+                    <div class="code-label">Sample request (simulated demo):</div>
+                    <pre><code class="language-json">{
+  "student_id": "STU-8924",
+  "term": "Spring 2026",
+  "include_attendance": true,
+  "generate_ai_insight": true
+}</code></pre>
+                  </div>
+                  <div class="code-col">
+                    <div class="code-label">Response (<span id="api-status-code">200 OK</span> in <span
+                        id="api-latency">48ms</span>):</div>
+                    <pre><code class="language-json" id="api-output-code">{
+  "status": "success",
+  "student": "Aravind Kumar",
+  "gpa": 3.82,
+  "attendance_rate": "96.4%",
+  "ai_diagnostic": "Exhibits strong mastery in Backend & Algorithm modules. Recommended for advanced distributed systems cohort."
+}</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Campus ERP -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type"><i class="fa-solid fa-building-columns"></i> Enterprise Institutional
+                  Portal</span>
+                <span class="project-date">03/2019 – 06/2019</span>
+              </div>
+              <h3 class="project-title">Campus Fee & Payment Management System</h3>
+              <p class="project-desc">
+                An internal campus ERP portal built with Python and Django that automates student billing and fee
+                reconciliation, using atomic PostgreSQL transactions to avoid race conditions during peak registration.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>80% Fewer Errors:</strong> Built an automated PDF reporting pipeline and tuned SQL
+                    aggregate queries with targeted indexing, cutting payment reconciliation errors by 80%.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>Business Logic Encoding:</strong> Worked with college administrators and
+                    cross-functional teams to turn institutional billing policies into scalable backend logic.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>Safe Billing Workflows:</strong> Fee reconciliation runs in atomic PostgreSQL
+                    transactions through the Django ORM, removing race conditions at peak registration.</span>
+                </div>
+              </div>
+
+              <div class="tech-stack-row">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Django</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Django ORM</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">Postman</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Access Healthcare Service -->
+          <article class="project-card">
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-type"><i class="fa-solid fa-hospital-user"></i> Professional Experience</span>
+                <span class="project-date">03/2019 – 11/2020</span>
+              </div>
+              <h3 class="project-title">Django REST Microservices & Batch Pipelines</h3>
+              <p class="project-desc">
+                Built as a Software Development Trainee at <strong>Access Healthcare Service / Mahendra Next Wealth
+                  IT</strong>: containerized services and scheduled pipelines that cut manual data entry.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>Containerized Services:</strong> Django REST microservices on Docker and Nginx, with JWT
+                    authentication and secure token-refresh lifecycles.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>Batch Automation:</strong> Scheduled asynchronous pipelines with role-based access
+                    control, reducing manual data entry by <strong>60%</strong> across 5,000+ daily records.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span><strong>Testing &amp; Reviews:</strong> 60+ Pytest unit and integration tests with external API
+                    mocking, plus Git feature branches and peer PR reviews that cut post-release defects by 35%.</span>
+                </div>
+              </div>
+
+              <div class="tech-stack-row">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Django REST</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Nginx</span>
+                <span class="tech-pill">JWT</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Visual Section -->
+    <section class="section architecture-section" id="architecture">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Backend Design</span>
+          <h2 class="section-title">Applied AI & Backend Architecture Pattern</h2>
+          <p class="section-subtitle">A high-level view of how I design scalable, decoupled FastAPI services with LLM
+            integration.</p>
+        </div>
+
+        <div class="arch-diagram-wrapper">
+          <div class="arch-flow">
+            <!-- Step 1 -->
+            <div class="arch-node">
+              <div class="node-icon"><i class="fa-solid fa-globe"></i></div>
+              <div class="node-title">1. Client / Webhook</div>
+              <div class="node-detail">HTTP/JSON Requests from Web & Mobile Clients</div>
+            </div>
+            <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 2 -->
+            <div class="arch-node active-node">
+              <div class="node-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="node-title">2. Pydantic Validator</div>
+              <div class="node-detail">Strict Type Enforcement & 40% Fewer Validation Errors</div>
+            </div>
+            <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 3 -->
+            <div class="arch-node active-node">
+              <div class="node-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="node-title">3. FastAPI Engine</div>
+              <div class="node-detail">Async Route Handlers & Dependency Injection</div>
+            </div>
+            <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 4 -->
+            <div class="arch-node">
+              <div class="node-icon"><i class="fa-solid fa-robot"></i></div>
+              <div class="node-title">4. Applied AI (OpenAI)</div>
+              <div class="node-detail">Prompt Templates & Fallback Retries</div>
+            </div>
+            <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <!-- Step 5 -->
+            <div class="arch-node">
+              <div class="node-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="node-title">5. PostgreSQL & SQLAlchemy</div>
+              <div class="node-detail">Indexed Queries & Atomic Transactions</div>
+            </div>
+          </div>
+
+          <div class="arch-legend">
+            <span><i class="fa-solid fa-circle text-accent"></i> Core Backend Stack</span>
+            <span><i class="fa-solid fa-circle text-success"></i> Resilient Error Handling</span>
+            <span><i class="fa-solid fa-circle text-info"></i> Swagger / OpenAPI Docs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Journey & Education Timeline -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Career & Growth</span>
+          <h2 class="section-title">Professional Journey</h2>
+          <p class="section-subtitle">A journey of engineering, dedication, continuous upskilling, and reinvention.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Software Development Engineering with Applied AI</h3>
+                  <div class="company-name">Masai School | Vishlesan i-Hub, IIT Patna</div>
+                </div>
+                <span class="timeline-badge">02/2026 – 08/2026</span>
+              </div>
+              <p class="timeline-desc">
+                Completed 1,200+ hours of full-time software engineering training covering data structures, algorithms
+                and high-performance backend architecture with FastAPI, Pydantic and SQLAlchemy.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-book-open-reader"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Career Break & Professional Development</h3>
+                  <div class="company-name">Self-Directed Technical Upskilling</div>
+                </div>
+                <span class="timeline-badge">01/2021 – 12/2025</span>
+              </div>
+              <p class="timeline-desc">
+                Planned career break for maternity and family care, while keeping my skills current through
+                self-directed study of Python programming, web development and software engineering practices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Trainee – Software Development</h3>
+                  <div class="company-name">Access Healthcare Service - Mahendra Next Wealth IT Pvt. Ltd</div>
+                </div>
+                <span class="timeline-badge">03/2019 – 11/2020</span>
+              </div>
+              <p class="timeline-desc">
+                Built containerized Django REST microservices with Docker, Nginx and JWT authentication. Ran scheduled
+                batch pipelines with role-based access control across 5,000+ daily records.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-award"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">B.E. Computer Science and Engineering</h3>
+                  <div class="company-name">Avinashilingam Institute for Home Science & Higher Education for Women</div>
+                </div>
+                <span class="timeline-badge">06/2014 – 04/2018</span>
+              </div>
+              <p class="timeline-desc">
+                Comprehensive degree in Computer Science and Engineering covering algorithms, Object-Oriented
+                Programming (OOP), database management systems (DBMS), software engineering methodologies, and network
+                architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Hire Me Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <span class="section-tag">Let's Connect</span>
+              <h2 class="contact-title">Ready to contribute to your engineering team</h2>
+              <p class="contact-desc">
+                Looking for a dependable Python backend developer with hands-on API experience and Applied AI skills?
+                Let's discuss how I can add immediate value to your backend services.
+              </p>
+
+              <div class="contact-methods">
+                <a href="mailto:shalinim96157@gmail.com" class="contact-method-item">
+                  <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <span class="method-label">Email Me</span>
+                    <span class="method-val">shalinim96157@gmail.com</span>
+                  </div>
+                </a>
+
+                <div class="contact-method-item">
+                  <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <span class="method-label">Location</span>
+                    <span class="method-val">Namakkal, TN (Open to Remote)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links-row">
+                <a href="https://github.com/shalinim157" target="_blank" rel="noopener noreferrer" class="social-pill"
+                  title="GitHub">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/shalini-m-15796ms" target="_blank" rel="noopener noreferrer"
+                  class="social-pill" title="LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <button class="social-pill copy-btn" onclick="copyEmail()">
+                  <i class="fa-solid fa-copy"></i> <span id="copy-text">Copy Email</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;Shalini/&gt;</span>
+        <p>© 2026 Shalini Madheswaran. Built with precision for Python Backend & Applied AI Engineering.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
